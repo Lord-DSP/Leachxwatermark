@@ -9,7 +9,8 @@ from subprocess import Popen, run as srun
 from time import sleep, time
 from threading import Thread, Lock
 from dotenv import load_dotenv
-from pyrogram import Client, enums
+from pyrogram import*
+import time, os
 from asyncio import get_event_loop
 from pymongo import MongoClient
 
@@ -446,3 +447,11 @@ updater = tgUpdater(token=BOT_TOKEN, defaults=tgDefaults, request_kwargs={'read_
 bot = updater.bot
 dispatcher = updater.dispatcher
 job_queue = updater.job_queue
+
+
+AHBot = Client("schwibot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN, plugins=dict(root="{}/plugins".format(__name__)))
+
+
+
+
+
