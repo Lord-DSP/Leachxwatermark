@@ -28,3 +28,9 @@ tenacity
 tgCrypto
 xattr
 yt-dlp
+Pyrogram==1.4.16
+hachoir
+humanfriendly
+motor
+aiofiles
+aiohttp
