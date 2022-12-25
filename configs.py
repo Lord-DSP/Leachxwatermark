@@ -1,6 +1,6 @@
 import os
 
-#replace "fill here" replace this text with your required value 
+#replace "fill❗here" replace this text with your required value 
 
 class Config(object):
 	BOT_TOKEN = os.environ.get("BOT_TOKEN", "Fill❗here")
