@@ -1,20 +1,21 @@
 import os
 
+#replace "fill here" replace this text with your required value 
 
 class Config(object):
-	BOT_TOKEN = os.environ.get("BOT_TOKEN")
-	API_ID = int(os.environ.get("API_ID", 12345))
-	API_HASH = os.environ.get("API_HASH")
+	BOT_TOKEN = os.environ.get("BOT_TOKEN", "Fill❗here")
+	API_ID = int(os.environ.get("API_ID", "fill❗here"))
+	API_HASH = os.environ.get("API_HASH", "fill❗here")
 	STREAMTAPE_API_PASS = os.environ.get("STREAMTAPE_API_PASS", "NoNeed")
 	STREAMTAPE_API_USERNAME = os.environ.get("STREAMTAPE_API_USERNAME", "NoNeed")
-	LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL"))
-	UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", None)
+	LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "fill❗here id"))
+	UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "fill❗here")
 	DOWN_PATH = os.environ.get("DOWN_PATH", "./downloads")
 	PRESET = os.environ.get("PRESET", "ultrafast")
-	OWNER_ID = int(os.environ.get("OWNER_ID", 1445283714))
-	CAPTION = "By @AHToolsBot"
-	BOT_USERNAME = os.environ.get("BOT_USERNAME", "VideoWatermark_Bot")
-	DATABASE_URL = os.environ.get("DATABASE_URL")
+	OWNER_ID = int(os.environ.get("OWNER_ID", "fill❗here"))
+	CAPTION = "fill❗here"
+	BOT_USERNAME = os.environ.get("BOT_USERNAME", "fill❗here")
+	DATABASE_URL = os.environ.get("DATABASE_URL", "fill❗here")
 	BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", False))
 	ALLOW_UPLOAD_TO_STREAMTAPE = bool(os.environ.get("ALLOW_UPLOAD_TO_STREAMTAPE", False))
 	USAGE_WATERMARK_ADDER = """
